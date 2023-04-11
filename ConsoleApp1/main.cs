@@ -1,6 +1,8 @@
 ﻿namespace ConsoleApp1;
 using static ConsoleApp1.Task_2_PolessUP;
 using static ConsoleApp1.Task_3_PolessUP;
+using static ConsoleApp1.Task_5_PolessUP;
+
 public class main
 {
     static void Main(string[] args)
@@ -15,8 +17,11 @@ public class main
         Console.WriteLine(FindIndexes(nums, target));
         
         Console.WriteLine("Третье задание: ");
-        Console.WriteLine(binarySearch(nums, 8));
-        Console.WriteLine(binarySearch(nums, 11));
+        Console.WriteLine("Первая проверка: " + binarySearch(nums, 8));
+        Console.WriteLine("Вторая провекра: " + binarySearch(nums, 11));
         
+        Console.WriteLine("Пятое задание: ");
+        maxNum(nums);
+
     }
 }
